@@ -125,6 +125,7 @@ class PageRank implements SortInterface
                 }
 
                 foreach (array($i, $e) as $id) {
+                    $outlinks[ $ngrams[$id] ] = 0;
                     if (empty($outlinks[ $ngrams[$id] ])) {
                         $outlinks[ $ngrams[$id] ] = 0;
                     }
